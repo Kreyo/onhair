@@ -1,0 +1,159 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: fuchsia;
+}
+
+.success {
+  color: green;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Comic Sans MS';
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #B913B8;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #fff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+  width: 400px;
+}
+
+.menu-item {
+  padding: 10px;
+  background-color: #8411af;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  border: 3px solid deeppink;
+  padding: 30px;
+}
+
+.col {
+  flex: 1 0 4%;
+  height: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.col-content {
+  background: tomato;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.col-content:hover {
+  background: #8411af;
+  font-size: 1.3rem;
+}
+
+.col-5 {
+  flex: 1 0 20%;
+}
+
+.col-10 {
+  flex: 1 0 10%;
+}
+
+.col-20 {
+  flex: 1 0 5%;
+}
+
+.col-25 {
+  flex: 1 0 4%;
+}
+
+.popup-overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background: fuchsia;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  border: 3px solid #fff;
+  border-radius: 7px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+}
